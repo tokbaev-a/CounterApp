@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void display(int score) {
         TextView quantityTextView = (TextView) findViewById(R.id.score);
-        quantityTextView.setText("" + score);
+        quantityTextView.setText("" + String.format("%04d",score));
     }
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
